@@ -33,16 +33,14 @@
             buttonTabelaPedido = new Button();
             buttonTabelaVendedor = new Button();
             buttonTabelaItemPedido = new Button();
-            buttonInserirCliente = new Button();
-            buttonInserirVendedor = new Button();
-            buttonInserirProduto = new Button();
             SuspendLayout();
             // 
             // buttonCadastrarTabela
             // 
-            buttonCadastrarTabela.Location = new Point(63, 38);
+            buttonCadastrarTabela.Location = new Point(55, 28);
+            buttonCadastrarTabela.Margin = new Padding(3, 2, 3, 2);
             buttonCadastrarTabela.Name = "buttonCadastrarTabela";
-            buttonCadastrarTabela.Size = new Size(192, 29);
+            buttonCadastrarTabela.Size = new Size(168, 22);
             buttonCadastrarTabela.TabIndex = 0;
             buttonCadastrarTabela.Text = "Cadastrar Tabela Cliente";
             buttonCadastrarTabela.UseVisualStyleBackColor = true;
@@ -50,9 +48,10 @@
             // 
             // buttonTabelaProduto
             // 
-            buttonTabelaProduto.Location = new Point(63, 73);
+            buttonTabelaProduto.Location = new Point(55, 55);
+            buttonTabelaProduto.Margin = new Padding(3, 2, 3, 2);
             buttonTabelaProduto.Name = "buttonTabelaProduto";
-            buttonTabelaProduto.Size = new Size(172, 29);
+            buttonTabelaProduto.Size = new Size(150, 22);
             buttonTabelaProduto.TabIndex = 1;
             buttonTabelaProduto.Text = "Criar Tabela Produtos";
             buttonTabelaProduto.UseVisualStyleBackColor = true;
@@ -60,9 +59,10 @@
             // 
             // buttonTabelaPedido
             // 
-            buttonTabelaPedido.Location = new Point(63, 108);
+            buttonTabelaPedido.Location = new Point(55, 81);
+            buttonTabelaPedido.Margin = new Padding(3, 2, 3, 2);
             buttonTabelaPedido.Name = "buttonTabelaPedido";
-            buttonTabelaPedido.Size = new Size(172, 29);
+            buttonTabelaPedido.Size = new Size(150, 22);
             buttonTabelaPedido.TabIndex = 2;
             buttonTabelaPedido.Text = "Criar Tabela Pedido";
             buttonTabelaPedido.UseVisualStyleBackColor = true;
@@ -70,9 +70,10 @@
             // 
             // buttonTabelaVendedor
             // 
-            buttonTabelaVendedor.Location = new Point(63, 143);
+            buttonTabelaVendedor.Location = new Point(55, 107);
+            buttonTabelaVendedor.Margin = new Padding(3, 2, 3, 2);
             buttonTabelaVendedor.Name = "buttonTabelaVendedor";
-            buttonTabelaVendedor.Size = new Size(172, 29);
+            buttonTabelaVendedor.Size = new Size(150, 22);
             buttonTabelaVendedor.TabIndex = 3;
             buttonTabelaVendedor.Text = "Criar Tabela Vendedor";
             buttonTabelaVendedor.UseVisualStyleBackColor = true;
@@ -80,57 +81,26 @@
             // 
             // buttonTabelaItemPedido
             // 
-            buttonTabelaItemPedido.Location = new Point(63, 178);
+            buttonTabelaItemPedido.Location = new Point(55, 134);
+            buttonTabelaItemPedido.Margin = new Padding(3, 2, 3, 2);
             buttonTabelaItemPedido.Name = "buttonTabelaItemPedido";
-            buttonTabelaItemPedido.Size = new Size(192, 29);
+            buttonTabelaItemPedido.Size = new Size(168, 22);
             buttonTabelaItemPedido.TabIndex = 4;
             buttonTabelaItemPedido.Text = "Criar Tabela Item Pedido";
             buttonTabelaItemPedido.UseVisualStyleBackColor = true;
             buttonTabelaItemPedido.Click += TabelaItemPedido;
             // 
-            // buttonInserirCliente
-            // 
-            buttonInserirCliente.Location = new Point(358, 38);
-            buttonInserirCliente.Name = "buttonInserirCliente";
-            buttonInserirCliente.Size = new Size(113, 29);
-            buttonInserirCliente.TabIndex = 5;
-            buttonInserirCliente.Text = "Inserir Cliente";
-            buttonInserirCliente.UseVisualStyleBackColor = true;
-            buttonInserirCliente.Click += InserirCliente;
-            // 
-            // buttonInserirVendedor
-            // 
-            buttonInserirVendedor.Location = new Point(358, 73);
-            buttonInserirVendedor.Name = "buttonInserirVendedor";
-            buttonInserirVendedor.Size = new Size(125, 29);
-            buttonInserirVendedor.TabIndex = 6;
-            buttonInserirVendedor.Text = "Inserir Vendedor";
-            buttonInserirVendedor.UseVisualStyleBackColor = true;
-            buttonInserirVendedor.Click += InserirVendedor;
-            // 
-            // buttonInserirProduto
-            // 
-            buttonInserirProduto.Location = new Point(358, 108);
-            buttonInserirProduto.Name = "buttonInserirProduto";
-            buttonInserirProduto.Size = new Size(125, 29);
-            buttonInserirProduto.TabIndex = 7;
-            buttonInserirProduto.Text = "Inserir Produto";
-            buttonInserirProduto.UseVisualStyleBackColor = true;
-            buttonInserirProduto.Click += InserirProduto;
-            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(buttonInserirProduto);
-            Controls.Add(buttonInserirVendedor);
-            Controls.Add(buttonInserirCliente);
+            ClientSize = new Size(700, 338);
             Controls.Add(buttonTabelaItemPedido);
             Controls.Add(buttonTabelaVendedor);
             Controls.Add(buttonTabelaPedido);
             Controls.Add(buttonTabelaProduto);
             Controls.Add(buttonCadastrarTabela);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -143,8 +113,5 @@
         private Button buttonTabelaPedido;
         private Button buttonTabelaVendedor;
         private Button buttonTabelaItemPedido;
-        private Button buttonInserirCliente;
-        private Button buttonInserirVendedor;
-        private Button buttonInserirProduto;
     }
 }
